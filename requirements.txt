@@ -1,0 +1,5 @@
+asyncio
+discord
+python-dotenv
+requests
+sentencepiece
