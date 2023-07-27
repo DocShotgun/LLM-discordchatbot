@@ -1,1 +1,1 @@
-{"INSTRUCTIONS":"Write {{char}}'s next reply in a fictional roleplay chat between {{user}} and {{char}}.","TRIGGER":""}
+{"INSTRUCTIONS":"Write {{char}}'s next reply in the conversation between {{user}} and {{char}}. Stay in character and give creative responses.","TRIGGER":"","ENDPOINT_KOBOLD":"http://127.0.0.1:5001","ENDPOINT_OOBA":"http://127.0.0.1:5000","max_length":"180","temperature":"0.82","top_k":"72","top_p":"0.21","rep_pen":"1.19"}
