@@ -18,6 +18,24 @@ The bot will always keep its character definition data at the top of each prompt
 
 On recieving an API response from Kobold/Ooba, it will attempt to clean up the text before serving it to Discord.
 
+# How to use (for the brave):
+
+Requirements: Python 3.10 and Git
+
+Installation:
+1. Install and configure one of KoboldAI (https://github.com/henk717/KoboldAI), KoboldCPP (https://github.com/LostRuins/koboldcpp), or Oobabooga textgen webui (https://github.com/oobabooga/text-generation-webui).   
+2. Clone this repository to your desired location: ```git clone https://github.com/DocShotgun/LLM-discordchatbot```
+3. Open a terminal inside the LLM-discordchatbot folder and create a virtual environment: ```python -m venv venv```
+4. Activate the virtual environment: ```./venv/scripts/activate```
+5. Install dependencies: ```pip install -r requirements.txt```
+6. Register an application on Discord, create a bot, and obtain your bot token: https://discord.com/developers/docs/intro
+7. Edit ".env" with your Discord bot token.
+8. Obtain a "tokenizer.model" file from a Llama model and place it inside the tokenizer folder. The official HuggingFace repository can be found at: https://huggingface.co/meta-llama
+9. Obtain a TavernAI/SillyTavern character card in .json format and place it in the characterfiles folder. Or create your own at: https://avakson.github.io/character-editor/
+10. Edit your settings in "config.json" and "start.bat".
+11. Start your API endpoint (KoboldAI, KoboldCPP, or Oobabooga textgen webui).
+12. Run "start.bat"!
+
 # Commandline args:
 
 --api (-a): Which API backend to use; select "kobold" or "ooba"
