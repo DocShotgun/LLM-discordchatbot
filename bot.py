@@ -256,7 +256,7 @@ async def on_message(message):
                         response_text = "Sorry, I didn't get that, could you ask me something else?"
                         message_history[author_id].pop() # Get rid of the last user prompt
                     else:
-                        message_history[author_id].append(f"\n{char_name}: {response_text}") # Add good result to msg history
+                        message_history[author_id].append(f"{char_name}: {response_text}") # Add good result to msg history
                     await message.reply(response_text)
                     is_responding = False
                     print("Response complete")
